@@ -1,0 +1,9 @@
+#!/bin/sh
+
+findpy3=$(which python3)
+if [ -z $findpy3 ]; then
+	echo "Can't find 'pyhton3' installed. That script needs it!";
+	exit 1;
+fi
+
+$findpy3 bin/checker.py
